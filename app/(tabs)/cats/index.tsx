@@ -16,7 +16,7 @@ const Cats = () => {
 
   const renderItem = ({ item }: { item: any }) => (
     <Link href={`/cats/${item.id}`} asChild>
-      <Pressable style={styles.itemContainer}>
+      <Pressable className=" flex-1 flex-row items-center p-2 border-b-[1px] border-[#eee]" style={styles.itemContainer}>
         <View style={styles.textContainer}>
           <Text style={styles.nameText}>{item.name}</Text>
         </View>
@@ -40,12 +40,12 @@ export default Cats;
 
 const styles = StyleSheet.create({
   itemContainer: {
-    flex: 1,
-    flexDirection: "row",
-    alignItems: "center",
-    padding: 16,
-    borderBottomWidth: 1,
-    borderBottomColor: "#eee",
+    // flex: 1,
+    // flexDirection: "row",
+    // alignItems: "center",
+    // padding: 16,
+    // borderBottomWidth: 1,
+    // borderBottomColor: "#eee",
   },
   textContainer: {
     marginLeft: 16,
