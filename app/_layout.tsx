@@ -11,10 +11,17 @@ export default function HomeLayout() {
         headerTitleStyle: {
           fontWeight: "bold",
         },
-        headerShown:false
+        // headerShown: false,
       }}
     >
       <Stack.Screen name="index" options={{ title: "this is index.js" }} />
+      <Stack.Screen
+        name="modal"
+        options={{
+          // Set the presentation mode to modal for our modal route.
+          presentation: "modal",
+        }}
+      />
     </Stack>
   );
 }
